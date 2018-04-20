@@ -159,6 +159,7 @@ freqHaha$Mot <- as.factor(freqHaha$Mot)
 phrases$Phrases <- as.factor(phrases$Phrases)
 
 #Phrases les plus courantes
+phrasescourantes <- ggplot(head(phrases,25), aes(Phrases, Fréquence))+
   geom_bar(fill='#99b3ff',stat="identity")+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))+
   theme(legend.position="none")
